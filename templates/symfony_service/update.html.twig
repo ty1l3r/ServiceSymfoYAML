@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello AccueilController!{% endblock %}
+{% block body %}
+    <div class="container">
+        <h4 class="mt-4">UPDATE</h4>
+            {{ form_start(form) }}
+            {{ form_row(form.name) }}
+        <br>
+            {{ form_row(form.description) }}
+        <br>
+            {{ form_label(form.userName) }}
+        {% for users in form.userName %}
+            <div class="mt-1">{{ form_widget(users) }}</div>
+        {% endfor %}
+        <div class="mt-3">{{ form_row(form.valider) }}</div>
+            {{ form_end(form) }}
+    </div>
+{% endblock %}

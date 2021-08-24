@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title %}Ajouter une organization{% endblock %}
+{% block body %}
+    <div class="container">
+        <h4 class="mt-4">Add Organizations</h4>
+        {{ form_start(formCreateOrganisations)}}
+        {{ form_end(formCreateOrganisations) }}
+    </div>
+{% endblock %}
